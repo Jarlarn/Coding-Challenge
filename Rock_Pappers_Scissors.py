@@ -1,5 +1,5 @@
 '''This is a simple program to play rock, pappers and scissors with the computer. It has a scoring system and checks if you want to play again.
-This program also handles errors and invalid inputs.
+
 '''
 
 
@@ -40,6 +40,7 @@ def is_win(player,computer):
 }
     return WINNING_MOVES.get(player) == computer
 
+#Function to check if the game should be restarted
 def restart_game():
     while True:
         try:
@@ -55,7 +56,7 @@ def restart_game():
     else:
         return False  # Quits the game
 
-#Main functions that runs the entire game
+#Main function that runs the entire game
 def main():
     while True:
         print(play())
