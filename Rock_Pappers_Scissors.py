@@ -12,7 +12,7 @@ def play():
     global computer_score#Initialize variabels, make them global so we can access them later on. 
 
     try:
-        player = input("'r' for rock, 'p' for paper, 's' for scissors. > ")
+        player = input("Welcome to rock pappers scissors! Try to beat me if you can! \n 'r' for rock, 'p' for paper, 's' for scissors. > ")
         if player not in ('r', 'p', 's'):
             raise ValueError(f"Invalid input: {player}")
     except ValueError as e:
