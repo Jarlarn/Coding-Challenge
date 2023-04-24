@@ -6,13 +6,19 @@
 import random #Random.choice function is required to randomise the computers choice. 
 
 player_score, computer_score = 0 , 0 #Initialize variabels 
+first_time = True
 #Function to play the game
 def play(): 
     global player_score
     global computer_score#Initialize variabels, make them global so we can access them later on. 
+    global first_time
 
     try:
-        player = input("Welcome to rock pappers scissors! Try to beat me if you can! \n 'r' for rock, 'p' for paper, 's' for scissors. > ")
+        if first_time:
+             player = input("Welcome to rock pappers scissors! Try to beat me if you can! \n 'r' for rock, 'p' for paper, 's' for scissors. > ")
+             first_time = False
+        elif not first_time:
+            player = input("'r' for rock, 'p' for paper, 's' for scissors. > ")
         if player not in ('r', 'p', 's'):
             raise ValueError(f"Invalid input: {player}")
     except ValueError as e:
