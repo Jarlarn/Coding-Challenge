@@ -1,5 +1,5 @@
 '''This is a simple program to play rock, pappers and scissors with the computer. It has a scoring system and checks if you want to play again.
-This program does not check for invalid inputs, it could be implemented by a try, except function.
+This program also handles errors and invalid inputs.
 '''
 
 
