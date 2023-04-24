@@ -1,4 +1,6 @@
-'''This is a simple program to play rock, pappers and scissors with the computer. It has a scoring system and checks if you want to play again.
+'''
+Coding Challenge: Write a program to play rock, pappers and scissors with the computer. The program should have a scoring system as well as 
+a choice of continuing play. 
 
 '''
 
